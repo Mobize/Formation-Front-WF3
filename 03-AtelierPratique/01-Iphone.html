@@ -16,8 +16,8 @@
         <header>
             <!-- menu  -->
                 <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
-                      <div class="container">
+                    <div class="container-fluid entete">
+                      
                           <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -43,21 +43,21 @@
                             </ul>
                             
                         </div><!-- /.navbar-collapse -->
-                      </div><!-- container -->
+                      <!-- container -->
                     </div><!-- /.container-fluid -->           
                 </nav>
                 <!-- Fin du menu1 -->
 
                 <!-- Menu 2 -->
-                <div class="container">
+                <div class="container-fluid entete2">
                 <div class="row">
                       <div class="col-md-12">
-                            <img src="./assets/img/menu/iPhone7.png" >
-                            <img src="./assets/img/menu/iPhone6s.png" >
-                            <img src="./assets/img/menu/iPhoneSE.png" >
-                            <img src="./assets/img/menu/iOs10.png" >
-                            <img src="./assets/img/menu/Accessoires.png" >
-                            <img src="./assets/img/menu/Comparer.png" >
+                           <a href="#"><img src="./assets/img/menu/iPhone7.png" ></a>
+                           <a href="#"><img src="./assets/img/menu/iPhone6s.png" ></a>
+                           <a href="#"><img src="./assets/img/menu/iPhoneSE.png" ></a>
+                           <a href="#"> <img src="./assets/img/menu/iOs10.png" ></a>
+                           <a href="#"><img src="./assets/img/menu/Accessoires.png" ></a>
+                           <a href="#"><img src="./assets/img/menu/Comparer.png" ></a>
                       </div>
                  </div>
                 </div><!-- fin du menu2 -->
@@ -93,13 +93,55 @@
                 <div class="col-md-2 col-md-offset-3">
                     <img src="./assets/img/iPhone.png" class="img-responsive ">
                 </div>
-                <div class="col-md-5 col-md-offset-1">
-                    <h3 class="passez">Passez à l'iPhone 7</h3>
+                <div class="col-md-4">
+                    <h3 class="passez">Passez à l'iPhone 7.</h3>
+                    <p class="echange">Échanger votre smartphone contre un iPhone<br>
+                    neuf dans un Apple Store et beneficiez de <br>mensualitées reduites</p>
+                    <p class="comment"><a href="#">Comment ça marche ? ></a></p>
                 </div>
             </div>
         </div>
         <!-- fin bandeau passez iphone7 -->
 
+        <!-- Formulaire -->
+        <div class="container">
+            <h3 class="contact">Contact</h3>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputName3" class="col-sm-1 control-label"></label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName3" placeholder="Nom et Prénom">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-1 control-label"></label>
+              <div class="col-sm-5 email">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+              <div class="col-sm-5 tel">
+                <input type="text" class="form-control " id="inputTel3" placeholder="Téléphone">
+              </div>
+            </div>
+            <div class="form-group">
+             <label for="inputSubject3" class="col-sm-1 control-label"></label>
+                 <div class="col-sm-10">
+                     <input type="text" class="form-control" id="inputSubject3" placeholder="Sujet">
+                </div> 
+            </div>
+            <div class="form-group">
+             <label for="inputSubject3" class="col-sm-1 control-label"></label>
+                 <div class="col-sm-10">
+                        <textarea class="form-control" id="inputMessage3" placeholder="Votre Message" rows="10"></textarea>
+                </div> 
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-1 col-sm-10 submit">
+                <button type="submit" class="btn btn-primary btn-lg active bouton">Envoyer ma demande</button>
+              </div>
+            </div>
+          </form>
+        </div>
+          <!-- Fin du Formulaire -->
     <script src="//code.jquery.com/jquery-1.12.0.js"></script>
     <script src="./assets/js/01-iphone.js"></script>
 </body>

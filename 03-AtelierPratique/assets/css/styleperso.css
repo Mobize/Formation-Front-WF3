@@ -52,8 +52,54 @@ body{
     background:grey;
 }
 h3.passez{
-    margin-top:65px;
+    margin-top:40px;
     font-family: 'Roboto', sans-serif;
     color:black;
-    margin-left:50px;
+    text-align: center;
+}
+p.echange{
+    margin-top:20px;
+}
+p.comment{
+    margin-top:20px;
+}
+h3.contact{
+    margin-top:35px;
+    text-align: center;
+    margin-bottom:35px;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size:30px;
+}
+#inputName3::placeholder, #inputEmail3::placeholder, #inputTel3::placeholder,#inputSubject3::placeholder,#inputMessage3::placeholder{
+    color:black;
+    font-weight:bold;
+    
+}
+.form-control{
+    background: #EEEEEE;
+}
+.col-sm-5.tel{
+    padding-left:5px;
+}
+.col-sm-5.email{
+    padding-right:5px;
+}
+.col-sm-offset-1.col-sm-10.submit{
+    text-align: center;
+}
+.btn.btn-primary.btn-lg.bouton{
+    width: 220px;
+    padding:5px;
+    border-radius:0;
+}
+.nav > li{
+    margin-left:20px;
+}
+.container-fluid.entete{
+margin-left:20%;
+}
+.container-fluid.entete2{
+    margin-left: 28%;
 }
