@@ -1,0 +1,59 @@
+
+
+.navbar-inverse .navbar-nav > li > a{
+    color:#fff;
+}
+
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+}
+header{
+    background:#141414;
+}
+.iphonebandeau{
+    background: black;
+}
+h2, .h2{
+    text-align: center;
+    color:#fff;
+}
+.numero7{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color:#fff;
+    font-size:40px;
+}
+h3, .h3{
+    margin-top:-15px;
+}
+p {
+    text-align:center;
+}
+.container>a{
+    text-align:center;
+}
+a{
+    margin-left:10px ;
+}
+.container .store {
+    color:#fff;
+}
+body{
+    background: black;
+}
+.bas{
+    background:#fff;
+}
+.row.bas img{
+    padding-top:20px;
+}
+.fondgris{
+    background:grey;
+}
+h3.passez{
+    margin-top:65px;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    margin-left:50px;
+}
