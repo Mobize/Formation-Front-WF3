@@ -7,6 +7,7 @@
 @media (min-width: 768px) {
     .container {
       width: 750px;
+    }
 }
 header{
     background:#141414;
@@ -79,12 +80,6 @@ h3.contact{
 }
 .form-control{
     background: #EEEEEE;
-}
-.col-sm-5.tel{
-    padding-left:5px;
-}
-.col-sm-5.email{
-    padding-right:5px;
 }
 .col-sm-offset-1.col-sm-10.submit{
     text-align: center;
