@@ -98,3 +98,30 @@ margin-left:20%;
 .container-fluid.entete2{
     margin-left: 28%;
 }
+footer{
+    background: #141414;
+    color:#fff;
+    padding-top: 10px;
+}
+#success{
+    display: none;
+    padding: 10px;
+    margin-top: 2em;
+    width:50%;
+    margin:30px auto;
+    background: #fff;
+  }
+.text-success{
+    margin-top: 5px;
+}
+.alert{
+    width:82%;
+    margin:15px auto;
+}
+.container.votre{
+    height:150px;
+}
+.container.votre{
+    display: none;
+    height:100px;
+}
