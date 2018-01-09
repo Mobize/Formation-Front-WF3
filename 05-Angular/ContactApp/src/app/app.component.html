@@ -23,20 +23,21 @@
           </li>
       </ul>
     </div>
+    <!-- formulaire d ajout de contact -->
+    <app-ajout-contact 
+    (unContactEstCree)="ajouterContactDansListe($event)">
+
+    </app-ajout-contact>
   </div>
+
+  
+  
+
   <div class="col-sm-8">
-    <div class="jumbotron" *ngIf="contactActif">
-      <h2>
-        {{ contactActif.prenom }} {{ contactActif.nom}}
-      </h2> 
-     <input class="form-control" type="text"
-     placeholder="saisissez votre prénom"
-     [(ngModel)]="contactActif.prenom">
-     <br>
-     <input class="form-control" type="text"
-     placeholder="saisissez votre prénom"
-     [(ngModel)]="contactActif.nom">
-    </div>
-  </div>
+    <app-profil-contact [contactActif]="contactActif"></app-profil-contact>
 </div>
+
+<footer class="text-center">
+  &copy; Copyright 2018 - Paris XIV
+</footer>
 

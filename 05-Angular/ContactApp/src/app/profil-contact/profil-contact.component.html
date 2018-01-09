@@ -1,0 +1,17 @@
+<div class="jumbotron" *ngIf="contactActif">
+    <h2>
+      {{ contactActif.prenom }} {{ contactActif.nom}}
+    </h2> 
+   <input class="form-control" type="text"
+   placeholder="saisissez votre prénom"
+   [(ngModel)]="contactActif.prenom">
+   <br>
+   <input class="form-control" type="text"
+   placeholder="saisissez votre nom"
+   [(ngModel)]="contactActif.nom">
+  </div>
+  <div class="jumbotron" *ngIf="!contactActif">
+      <span class="glyphicon glyphicon-user"></span>
+  <h2>Bienvenue, choisissez un contact</h2>
+  
+</div>

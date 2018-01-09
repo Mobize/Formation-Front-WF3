@@ -4,18 +4,13 @@
  * */
 
 import { Component } from '@angular/core';
-
+import {Contact} from "./model/contact.model";
 /* Creation d une interface de contact
 * Cela me permet de definir la forme/structure 
 * de mes objets contact.d 
  */
 
- interface Contact {
-   id     : number;
-   prenom : string;
-   nom    : string;
-   email?  : string;
- }
+
 
  interface ContactArray {
    [index: number] : Contact;
@@ -62,7 +57,7 @@ export class AppComponent {
   }
 
   // Un tableau qui contient une collection de contacts
-  Contacts:ContactArray =[
+  Contacts:Contact[] =[
     {id: 1, prenom:'Hugo', nom:'Liegeard'},
     {id: 2, prenom:'Olivier', nom:'Charpentier'},
     {id: 3, prenom:'Barry', nom:'White'},
@@ -86,4 +81,8 @@ export class AppComponent {
     console.log(this.contactActif);
   }
 
+  ajouterContactDansListe(event){
+    this.Contacts.push(event.contact);
+    console.log(this.Contacts);
+  }
 }
