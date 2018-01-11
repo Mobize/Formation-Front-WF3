@@ -4,10 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-     
-        <script src="./entrainement.js"></script>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-5">
+                    <form id="contact" action="traitement.php" class="form-horizontal" novalidate>
+                     
+                        <div class="form-group">
+                         <label for="nom" class="col-md-4 control-label">Nom</label>
+                           <div class="col-md-8">
+                              <input type="text" name="nom" id="nom" class="form-control" placeholder="Nom">
+                           </div>
+                        </div>
+                     
+                        <div class="form-group">
+                            <label for="prenom" class="col-md-4 control-label">Prénom</label>
+                            <div class="col-md-8">
+                                <input type="text" name="prenom" id="prenom" class="form-control" placeholder="Prénom">
+                            </div>
+                        </div>
+                        
+                     
+                     
+                     <button type="submit" class="btn btn-default">Submit</button>
+                   </form>
+            </div>
+        </div> 
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="./chat1.jpg" alt="...">
+                    <div class="carousel-caption">
+                      ...
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="..." alt="...">
+                    <div class="carousel-caption">
+                      ...
+                    </div>
+                  </div>
+                  ...
+                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./entrainement.js"></script>
 </body>
 </html>

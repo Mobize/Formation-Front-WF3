@@ -32,7 +32,7 @@ alert( f(7) );
  }
  alert(f(7))*/
 
- function triple(x)
+ /*function triple(x)
 {
    return 3*x;
 }
@@ -52,4 +52,33 @@ console.log(resultat)
 
 function addition(unite1, unite){
     var somme = prompt('')
-}
+}*/
+
+$(function(){
+    $('#contact').on('submit' , function(e){
+
+        e.preventDefault();
+        
+        $('#contact .has-error').removeClass('has-error');
+        $('#contact .text-danger' ).remove();
+
+        var nom    = $('#nom');
+        var prenom = $('#prenom');
+
+        if(nom.val().length === 0){
+            nom.parent().addClass('has-error');
+            $('<p class="text-danger"> saisissez votre nom</p >').appendTo(nom.parent())
+        } else{
+            nom.parent().addClass('has-success');
+        }
+        if(prenom.val().length === 0){
+            prenom.parent().addClass('has-error');
+            $('<p class="text-danger">Saisissez votre prenom</p>').appendTo(prenom.parent())
+        }
+
+        if($('#contact').find('has-error').length ===0){
+           
+            
+        }        
+    })
+})

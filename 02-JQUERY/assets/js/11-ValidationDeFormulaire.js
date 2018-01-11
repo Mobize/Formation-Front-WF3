@@ -79,18 +79,12 @@ $(function(){
         //verifier si il y à des erreurs dans le formulaire
         if($('#contact').find('.has-error').length ===0){
             $('#contact').replaceWith(`
-                <div class="alert alert-danger">
-                    Votre demande à bien été envoyée !
-                    Nous vous répondrons dans les meilleurs délais.
-                </div>
+               
                 <div class="alert alert-success">
                     Votre demande à bien été envoyée !
                     Nous vous répondrons dans les meilleurs délais.
                 </div>
-                <div class="alert alert-info">
-                    Votre demande à bien été envoyée !
-                    Nous vous répondrons dans les meilleurs délais.
-                </div>
+               
             `);
         } else{
             $('#contact').prepend(`
