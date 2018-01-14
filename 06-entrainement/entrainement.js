@@ -54,6 +54,7 @@ function addition(unite1, unite){
     var somme = prompt('')
 }*/
 
+<<<<<<< HEAD
 
 /*function conversion(unite1, taux, unite2)
 {
@@ -253,3 +254,33 @@ alert(i);
 
 for(var i =5; i<25 ; i++)
 document.write(i)*/
+=======
+$(function(){
+    $('#contact').on('submit' , function(e){
+
+        e.preventDefault();
+        
+        $('#contact .has-error').removeClass('has-error');
+        $('#contact .text-danger' ).remove();
+
+        var nom    = $('#nom');
+        var prenom = $('#prenom');
+
+        if(nom.val().length === 0){
+            nom.parent().addClass('has-error');
+            $('<p class="text-danger"> saisissez votre nom</p >').appendTo(nom.parent())
+        } else{
+            nom.parent().addClass('has-success');
+        }
+        if(prenom.val().length === 0){
+            prenom.parent().addClass('has-error');
+            $('<p class="text-danger">Saisissez votre prenom</p>').appendTo(prenom.parent())
+        }
+
+        if($('#contact').find('has-error').length ===0){
+           
+            
+        }        
+    })
+})
+>>>>>>> 782a02c8d52107c195af06149a20313f156fbd3a
